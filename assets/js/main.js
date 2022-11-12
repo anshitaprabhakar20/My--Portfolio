@@ -132,7 +132,7 @@ if (selectedTheme) {
     iconTheme
   );
 }
-
+const sound=document.querySelector("#sound");
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener("click", () => {
   // Add or remove the light / icon theme
@@ -140,7 +140,7 @@ themeButton.addEventListener("click", () => {
   themeButton.classList.toggle(iconTheme);
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
-  localStorage.setItem("selected-icon", getCurrentIcon());
+  localStorage.setItem("selected-icon", getCurrentIcon()); 
 });
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
